@@ -1,0 +1,45 @@
+{
+    "task" : "distilled", 
+    "data_name": "esmin",
+    "save_dir": "checkpoints",
+    "result_dir": "results",
+    "data": {
+        "esmin": "ESMIN_UniProt.pkl",
+        "clinvar_id": "protein"
+    },
+    "model": {
+        "model_name": "esm2_650m",
+        "esm_params": {
+            "nlayers": 1,
+            "head": 1
+        },
+        "alphas": {
+            "mse": 0.1,
+            "hinge": 1,
+            "reg": 1},
+        "measure_dct": {
+            "loss": "avg", 
+            "mse": "avg", 
+            "hinge": "avg",
+            "reg": 1,
+            "preds": "cat", 
+            "targets": "cat", 
+            "seq_id": "list", 
+            "variant": "list"
+        },
+        "criteria": "corr"
+    },
+    "training": {
+        "load": 1,
+        "saved_ckt": "",
+        "nepochs": 20,
+        "log_freq" : 50,
+        "optim": {
+            "lr_model": 1e-4,
+            "lr_decoder": 1e-3,
+            "scheduler": "cosine",
+            "warmup_rate": 1e-2,
+            "weight_decay": 1e-2
+        }
+    }
+}
