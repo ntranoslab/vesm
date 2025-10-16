@@ -1,0 +1,44 @@
+{
+    "task": "Distillation", 
+    "setting": {
+        "data_name": "VESM2_3b_distilled_data",
+        "pretrained_dir": "",
+        "seed": 113,
+        "data_order": 0,
+        "mu_base": 0,
+        "mu_target": 0,
+        "sig": 1   
+    },
+    "model": {
+        "esm_params": {
+            "full": 1,
+            "nlayers": 0,
+            "head": 0,
+            "norm": 0
+        },
+        "measure_dct": {
+            "loss": "avg"
+        }
+    },
+    "training": {
+        "nepochs": 10,
+        "minimum_epochs": 5,
+        "optim": {
+            "lr": 1e-3,
+            "head_lr_mult": 2,
+            "scheduler": "cosine",
+            "warmup_rate": 5e-2,
+            "weight_decay": 1e-2,
+            "split_decay": 1,
+            "scheduler_factor": 1
+        },
+        "log_freq": 100,
+        "early_stopping": {
+            "max_delta": 1e-4,
+            "min_delta": 1e-3,
+            "patience": 20,
+            "counter": 0
+        },
+        "load": 0
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "model_name": "esm2_8m",
+  "trainable_keys": [
+    "esm.embeddings.word_embeddings.weight",
+    "esm.encoder.layer.5.attention.self.query.weight",
+    "esm.encoder.layer.5.attention.self.query.bias",
+    "esm.encoder.layer.5.attention.self.key.weight",
+    "esm.encoder.layer.5.attention.self.key.bias",
+    "esm.encoder.layer.5.attention.self.value.weight",
+    "esm.encoder.layer.5.attention.self.value.bias",
+    "esm.encoder.layer.5.attention.output.dense.weight",
+    "esm.encoder.layer.5.attention.output.dense.bias",
+    "esm.encoder.layer.5.attention.LayerNorm.weight",
+    "esm.encoder.layer.5.attention.LayerNorm.bias",
+    "esm.encoder.layer.5.intermediate.dense.weight",
+    "esm.encoder.layer.5.intermediate.dense.bias",
+    "esm.encoder.layer.5.output.dense.weight",
+    "esm.encoder.layer.5.output.dense.bias",
+    "esm.encoder.layer.5.LayerNorm.weight",
+    "esm.encoder.layer.5.LayerNorm.bias",
+    "lm_head.bias",
+    "lm_head.dense.weight",
+    "lm_head.dense.bias",
+    "lm_head.layer_norm.weight",
+    "lm_head.layer_norm.bias",
+    "lm_head.decoder.weight"
+  ]
+}

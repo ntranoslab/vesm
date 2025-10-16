@@ -1,0 +1,21 @@
+{
+  "model_name": "esm3",
+  "trainable_keys": [
+    "transformer.blocks.47.attn.layernorm_qkv.0.weight",
+    "transformer.blocks.47.attn.layernorm_qkv.0.bias",
+    "transformer.blocks.47.attn.layernorm_qkv.1.weight",
+    "transformer.blocks.47.attn.out_proj.weight",
+    "transformer.blocks.47.attn.q_ln.weight",
+    "transformer.blocks.47.attn.k_ln.weight",
+    "transformer.blocks.47.ffn.0.weight",
+    "transformer.blocks.47.ffn.0.bias",
+    "transformer.blocks.47.ffn.1.weight",
+    "transformer.blocks.47.ffn.3.weight",
+    "output_heads.sequence_head.0.weight",
+    "output_heads.sequence_head.0.bias",
+    "output_heads.sequence_head.2.weight",
+    "output_heads.sequence_head.2.bias",
+    "output_heads.sequence_head.3.weight",
+    "output_heads.sequence_head.3.bias"
+  ]
+}

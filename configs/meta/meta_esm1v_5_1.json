@@ -1,0 +1,29 @@
+{
+  "model_name": "esm1v_5",
+  "trainable_keys": [
+    "esm.embeddings.word_embeddings.weight",
+    "esm.encoder.layer.32.attention.self.query.weight",
+    "esm.encoder.layer.32.attention.self.query.bias",
+    "esm.encoder.layer.32.attention.self.key.weight",
+    "esm.encoder.layer.32.attention.self.key.bias",
+    "esm.encoder.layer.32.attention.self.value.weight",
+    "esm.encoder.layer.32.attention.self.value.bias",
+    "esm.encoder.layer.32.attention.output.dense.weight",
+    "esm.encoder.layer.32.attention.output.dense.bias",
+    "esm.encoder.layer.32.attention.LayerNorm.weight",
+    "esm.encoder.layer.32.attention.LayerNorm.bias",
+    "esm.encoder.layer.32.intermediate.dense.weight",
+    "esm.encoder.layer.32.intermediate.dense.bias",
+    "esm.encoder.layer.32.output.dense.weight",
+    "esm.encoder.layer.32.output.dense.bias",
+    "esm.encoder.layer.32.LayerNorm.weight",
+    "esm.encoder.layer.32.LayerNorm.bias",
+    "esm.contact_head.regression.weight",
+    "lm_head.bias",
+    "lm_head.dense.weight",
+    "lm_head.dense.bias",
+    "lm_head.layer_norm.weight",
+    "lm_head.layer_norm.bias",
+    "lm_head.decoder.weight"
+  ]
+}
